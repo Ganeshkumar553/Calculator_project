@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style="color: aqua;">Calculator</h2>
+
+<form method="post">{% csrf_token %}
+  <label>First_Number:</label><br>
+  <input type="text"  name="fn" ><br>
+  <label>second_Number:</label><br>
+  <input type="text"  name="sn" ><br><br>
+  <select name="opr">
+  <option value="+">Add</option>
+  <option value="-">Sub</option>
+  <option value="*">Mul</option>
+  <option value="/">Div</option>
+   </select>
+  <button type="submit">Calculate</button><br>
+  <label>output:</label><br>
+  <input type="text" value="{{o}}">
+</form> 
+</body>
+</html>
+
